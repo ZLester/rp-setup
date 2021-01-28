@@ -4,24 +4,17 @@
 ```
 sudo raspi-config
 ```
-- [ ] Change User Password
-- Network Options
-  - [ ] Hostname
-`${greek}pi${model}`, e.g. alphapi4
-  - [ ] Wi-fi
-SSID is just the Wi-fi network name, not the BSSID
-- Boot Options
-  - [ ] Desktop / CLI > B2 Console Autologin
+- System Options
+  - [ ] S1 Wireless LAN (SSID is just the Wi-fi network name, not the BSSID)
+  - [ ] S3 Change User Password
+  - [ ] S4 Hostname (`${greek}pi${model}`, e.g. alphapi4))
+  - [ ] S5 Boot / Auto Login > B2 Console Autologin
+- Interface Options
+  - [ ] P2 SSH > Yes
 - Localisation Options
-  - [ ] Change Locale
-    - Use space to select/deselect entries
-    - Select `en_US.UTF-8 UTF-8`
-    - Hit enter to update and select `en_US.UTF-8 UTF-8` again
-- Interfacing Options
-  - [ ] SSH > Yes
-- Advanced Options
-  - [ ] Memory Split
-Enter 256
+  - [ ] L1 Locale > Select `en_US.UTF-8 UTF-8` with space > Hit enter to update and select `en_US.UTF-8 UTF-8` again
+- Performance Options
+  - [ ] P2 GPU Memory > 256
 
 ## Update Keyboard
 ```
