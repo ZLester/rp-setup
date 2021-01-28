@@ -46,6 +46,10 @@ sudo update-locale LC_ALL="en_US.UTF-8"
 
 ## Update Raspbian
 
+- [ ] Update Apt-Get
+```
+sudo apt-get update
+```
 - [ ] Update & Full Upgrade
 ```
 sudo apt -y update && sudo apt -y full-upgrade
