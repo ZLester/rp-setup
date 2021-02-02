@@ -119,5 +119,12 @@ gpu_freq=750
 ```
 - [ ] Overclock Pi 0
 ```
-TBD
+arm_freq=1085
+#arm_freq=1095 with heatsink
+gpu_freq=530
+#gpu_freq=550 with heatsink
+over_voltage=2
+core_freq=515
+sdram_freq=533
+over_voltage_sdram=1
 ```
