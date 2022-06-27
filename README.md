@@ -16,15 +16,10 @@ sudo raspi-config
 - Performance Options
   - [ ] P2 GPU Memory > 256
 
-## Update Keyboard
+## Enable Console Setup Service
 ```
-sudo nano /etc/default/keyboard
+sudo systemctl enable console-setup
 ```
-- [ ] Change XKBLAYOUT
-```
-XKBLAYOUT="us"
-```
-- [ ] Reboot to see effect
 
 ## Update Locale
 - [ ] Update LANGUAGE
