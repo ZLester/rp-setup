@@ -52,6 +52,17 @@ sudo apt clean
 ```
 - [ ] Reboot to see effect
 
+## Install Docker
+curl -sSL https://get.docker.com | sh
+sudo usermod -aG docker ubuntu
+sudo reboot
+
+## Install Docker Compose
+sudo apt-get install -y libffi-dev libssl-dev
+sudo apt-get install -y python3 python3-pip
+sudo apt-get remove python-configparser
+sudo pip3 install docker-compose
+
 ## Silent Boot
 - Update /boot/cmdline.txt
 ```
