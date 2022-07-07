@@ -4,6 +4,7 @@
 ```
 sudo raspi-config
 ```
+
 - System Options
   - [ ] S1 Wireless LAN (SSID is just the Wi-fi network name, not the BSSID)
   - [ ] S3 Change User Password
@@ -16,18 +17,10 @@ sudo raspi-config
 - Performance Options
   - [ ] P2 GPU Memory > 256
 
-## Enable Console Setup Service
-```
-sudo systemctl enable console-setup
-```
-
-## Update Locale
+## Update Locale LANGUAGE & LC_ALL
 - [ ] Update LANGUAGE
 ```
-sudo update-locale LANGUAGE=en_US.UTF-8
-```
-- [ ] Update LC_ALL
-```
+sudo update-locale LANGUAGE="en_US.UTF-8"
 sudo update-locale LC_ALL="en_US.UTF-8"
 ```
 - [ ] Reboot to see effect in `locale`
@@ -37,19 +30,11 @@ sudo update-locale LC_ALL="en_US.UTF-8"
 - [ ] Update Apt-Get
 ```
 sudo apt-get update
-```
-- [ ] Update & Full Upgrade
-```
 sudo apt -y update && sudo apt -y full-upgrade
-```
-- [ ] Update & Dist Upgrade
-```
 sudo apt -y update && sudo apt -y dist-upgrade
-```
-- [ ] Clean Apt
-```
 sudo apt clean
 ```
+
 - [ ] Reboot to see effect
 
 ## Install Docker
@@ -65,6 +50,13 @@ sudo apt-get install -y libffi-dev libssl-dev
 sudo apt-get install -y python3 python3-pip
 sudo apt-get remove python-configparser
 sudo pip3 install docker-compose
+```
+
+## Install MariaDB/MySQL
+```
+sudo apt update && sudo apt upgrade && sudo apt install mariadb-server
+sudo mysql_secure_installation
+sudo mysql -u root -p
 ```
 
 ## Silent Boot
@@ -113,6 +105,7 @@ Change ExecStart to
 ```
 ExecStart=-/sbin/agetty --skip-login --noclear --noissue --login-options "-f pi" %I $TERM
 ```
+
 ## Config Options & Overclocking
 ```
 sudo nano /boot/config.txt
