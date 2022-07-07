@@ -17,6 +17,11 @@ sudo raspi-config
 - Performance Options
   - [ ] P2 GPU Memory > 256
 
+## Enable Console Setup Service
+```
+sudo systemctl enable console-setup
+```
+
 ## Update Locale LANGUAGE & LC_ALL
 - [ ] Update LANGUAGE
 ```
