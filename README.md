@@ -55,7 +55,7 @@ sudo apt clean
 ## Install Docker
 ```
 curl -sSL https://get.docker.com | sh
-sudo usermod -aG docker ubuntu
+sudo usermod -aG docker zlester
 sudo reboot
 ```
 
